@@ -1,0 +1,37 @@
+{
+  "name": "redux_recoil_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend-recoil",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B6115296/redux_recoil_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/B6115296/redux_recoil_project/issues"
+  },
+  "homepage": "https://github.com/B6115296/redux_recoil_project#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "http-client": "^4.3.1",
+    "http-headers-js": "^1.0.10",
+    "mongoose": "^5.13.5"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
